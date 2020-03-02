@@ -1,21 +1,32 @@
 import React from "react"
 import { Link } from "gatsby"
+import {} from "@fortawesome/fontawesome-svg-core"
 
-import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import "../styles/global.css"
+import SocialButtons from "../components/SocialButtons"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <section className="page-header header-filter">
+      <div className="container">
+        <h2 className="title">Felipe V Pena</h2>
+        <p className="lead">Orange County Based Photographer</p>
+        <div className="hero-buttons">
+          <Link to="/portfolio/" className="btn hero-btn">
+            Portfolio
+          </Link>
+          <Link to="/contact/" className="btn hero-btn">
+            Contact
+          </Link>
+        </div>
+        <SocialButtons />
+      </div>
+    </section>
+    <Link to="/portfolio/">Go to page 2</Link>
+  </>
 )
 
 export default IndexPage
