@@ -1,18 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = () => (
+const Contact = () => (
   <React.Fragment>
-    <SEO title="Page two" />
-    <h1>Portfolio Page</h1>
-    <p>
-      This is where the gallery on images will be put, in terms of categories
-    </p>
+    <SEO title="Contact" />
+    <h1>Contact me</h1>
+    <p>Feel free to reach out for custom photography session quotes</p>
     <Link to="/">Go back to the homepage</Link>
   </React.Fragment>
 )
 
-export default SecondPage
+export default Contact
