@@ -1,0 +1,24 @@
+@import "colors";
+
+.navbar {
+  margin: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) auto repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  .link {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    color: #666;
+    &.brand {
+      display: block;
+      font-size: 5vw;
+      color: $dark-color;
+    }
+  }
+  .activeLink {
+    color: $dark-color;
+    font-weight: bold;
+  }
+}
