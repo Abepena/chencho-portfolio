@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import "./layout.css"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,13 +23,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div className="layout-container">
+        <main className="content">{children}</main>
+        <footer>Created with &#128147; by Abe Pena © {new Date().getFullYear()},</footer>
       </div>
     </>
   )

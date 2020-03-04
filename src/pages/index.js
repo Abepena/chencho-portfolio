@@ -25,7 +25,6 @@ const IndexPage = () => (
         <SocialButtons />
       </div>
     </section>
-    <Link to="/portfolio/">Go to page 2</Link>
   </>
 )
 
